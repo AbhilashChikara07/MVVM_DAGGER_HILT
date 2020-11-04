@@ -1,16 +1,15 @@
 package com.example.studentapp.featureName
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
-import androidx.lifecycle.ViewModel
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.example.studentapp.R
 import com.example.studentapp.featureName.data.User
 import com.example.studentapp.featureName.viewmodel.MainViewModel
 import com.example.studentapp.network.Status
 import dagger.hilt.android.AndroidEntryPoint
-import java.util.Observer
+import java.text.MessageFormat.Field.ARGUMENT
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
